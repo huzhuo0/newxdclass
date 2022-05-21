@@ -49,7 +49,7 @@ module.exports = {
       ref  : 'origin/master', /* git上的分支，我们自动化部署其实就是我们输入命令之后我们
                                 会远程拉取git上的仓库到我们的服务器上，把clone下来，然后又会自动的去帮我们安装依赖，
                                 然后去启动我们的pm2去部署我们的项目 */
-      repo : 'git@github.com:huzhuo0/xdclass.git',/* git上项目ssh地址  git@github.com:xd-eric/myblog.git */
+      repo : 'https://github.com/huzhuo0/newxdclass.git',/* git上项目ssh地址  git@github.com:xd-eric/myblog.git */
       path : '/usr/local/myProject',/* 存放的服务器上的路径 */
       ssh_options:"StrictHostKeyChecking=no",/* 设置秘钥的确认检测，我们这里设置为no
                    因为严格模式下的确认检测会把我们自动化的一些东西中断 */
