@@ -51,7 +51,7 @@ module.exports = {
                                 然后去启动我们的pm2去部署我们的项目 */
       repo : 'https://github.com/huzhuo0/newxdclass.git',/* git上项目ssh地址  git@github.com:xd-eric/myblog.git */
       path : '/usr/local/myProject',/* 存放的服务器上的路径 */
-      ssh_options:"StrictHostKeyChecking=no",/* 设置秘钥的确认检测，我们这里设置为no
+      ssh_options:"StrictHostKeyChecking=no",/* 设置秘钥的确认检测，我们这里设置为no，
                    因为严格模式下的确认检测会把我们自动化的一些东西中断 */
       'post-deploy' : 'npm install &&pm2 reload ecosystem.config.js --env production',
       /* 这个语句是我们项目部署之后会自动运行的命令 */
